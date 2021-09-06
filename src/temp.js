@@ -11,6 +11,7 @@ class GuessingGame {
   }
 
   guess() {
+    // const guessCandidate = Math.round((this.max - this.min) / 2);
     const guessCandidate = Math.round((this.maximum + this.minimum) / 2);
 
     this.currentCandidate = guessCandidate;
@@ -25,5 +26,3 @@ class GuessingGame {
     this.minimum = this.currentCandidate;
   }
 }
-
-module.exports = GuessingGame;
